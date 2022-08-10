@@ -7,16 +7,12 @@ public class Main {
         String[] arr = {"c=","c-","dz=","d-","lj","nj","s=","z="};
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String str = br.readLine();
-        int sum = 0;
         for (String s : arr) {
             if (str.contains(s)) {
-                sum++;
-            } else {
-                sum++;
+                str = str.replace(s,"!");
             }
         }
-        System.out.println(sum);
+        System.out.println(str.length());
         br.close();
-
     }
 }
