@@ -5,18 +5,19 @@ import static java.lang.System.in;
 
 public class Backjoon1541 {
     public static void main(String[] args) throws IOException {
+
         BufferedReader br =new BufferedReader(new InputStreamReader(in));
-        String num[] = br.readLine().split("-");
+        String [] num = br.readLine().split("-");
         int sum = 0;
-        for (int i = 0; i < num.length; i++){
-            int j = 0;
-            String num1[] = num[i].split("\\+");
-            for (int k = 0; k < num1.length; k++){
-                j += Integer.getInteger(num1[k]);
+        for (int i = 0; i<num.length; i++){
+            int k = 0;
+            String []num1 = num[i].split("\\+");
+            for (int j = 0; j < num1.length; j++){
+                k += Integer.parseInt(num1[j]);
             }
-            if (i == 0){
-                sum+= j;
-            }else sum-=j;
+            if (i==0){
+                sum += k;
+            }else sum -= k;
         }
         out.println(sum);
     }
