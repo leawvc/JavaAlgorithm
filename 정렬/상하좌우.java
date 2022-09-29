@@ -32,3 +32,7 @@ public class Main {
         System.out.println(x + " " + y);
     }
 }
+
+```
+입력 값
+```
