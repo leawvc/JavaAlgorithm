@@ -10,7 +10,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int h = sc.nextInt();
         int count = 0;
-        for (int i = 0; i < h; i++){
+        for (int i = 0; i <= h; i++){
             for (int j = 0; j < 60; j++){
                 for (int k = 0; k < 60; k++){
                     if (check(i,j,k))count++;
