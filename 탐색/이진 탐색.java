@@ -1,4 +1,7 @@
 // 이진 탐색 알고리즘
+// 입력 값 : 5 3
+// 입력 값 : 1 2 3 4 5
+// 출력 값 : 3
 
 import java.io.BufferedReader;
 import java.io.IOException;
